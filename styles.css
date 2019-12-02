@@ -1,0 +1,120 @@
+.navbar {
+  align-items: center;
+  background-color: #42409f;
+  box-shadow: 0 1px 4px #8f8f8f;
+  display: flex;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+.navbar a:hover {
+  color: #667eea;
+}
+
+.logo {
+  color: white;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Mobile Menu Styles */
+#mobile-menu {
+  color: #3f3f3f;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.mobile-title, .signin {
+  color: #42409f;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.signin {
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap; /* Handles number of menu columns */
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.product-list:first-child {
+  flex-grow: 1;
+}
+
+.product-list-item {
+  padding: 0 1rem;
+}
+
+.product-list-item > a {
+  display: flex;
+  align-items: center;
+}
+
+.product-list-item > a > img {
+  height: 24px;
+  margin-right: 0.75rem;
+  width: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* Popup styles */
+
+.close-popup {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem; /* position button over underlying menu button */
+}
+
+.popup {
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.popupContainer {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px #8f8f8f;
+  flex-grow: 1;
+  line-height: 40px;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.95);
+  transform-origin: 100% 0;
+  transition-duration: 0.25s;
+  transition-property: transform, opacity;
+  white-space: nowrap;
+  will-change: transform, opacity;
+}
+
+.popupActive .popupContainer {
+  transform: none;
+  opacity: 1;
+  pointer-events: auto;
+}

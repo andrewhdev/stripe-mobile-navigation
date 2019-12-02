@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="logo">Music Store</h1>
+        <!-- We do this stopPropogation() to prevent the click reaching the window.onclick at the bottom of the page -->
+        <div id="mobile-menu" onclick="event.stopPropagation()">
+            <button onclick="document.getElementById('mobile-menu').classList.add('popupActive');">
+                <img src="./icons/hamburger_menu.svg" />
+            </button>
+            <div class="popup">
+                <div class="popupContainer">
+                    <button class="close-popup"
+                        onclick="document.getElementById('mobile-menu').classList.remove('popupActive');">
+                        <img src="./icons/close.svg" />
+                    </button>
+                    <h3 class="mobile-title">Products</h3>
+                    <div class="products">
+                        <ul class="product-list">
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/acoustic-guitar.svg" /> Acoustic Guitars</a>
+                            </li>
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/electric-guitar.svg" /> Electric Guitars</a>
+                            </li>
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/bass-guitar.svg" /> Bass Guitars</a>
+                            </li>
+                        </ul>
+                        <ul class="product-list">
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/microphone.svg" /> Microphones</a>
+                            </li>
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/drums.svg" /> Drums</a>
+                            </li>
+                            <li class="product-list-item">
+                                <a href="./index.html"><img src="./icons/piano.svg" /> Piano</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="signin">
+                        <a href="./index.html">Sign in &nbsp;►</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onclick = () => {
+            document.getElementById('mobile-menu').classList.remove('popupActive');
+        }
+    </script>
+</body>
+
+</html>
