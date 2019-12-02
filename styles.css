@@ -113,7 +113,7 @@
   will-change: transform, opacity;
 }
 
-.popupActive .popupContainer {
+.popup-active .popup {
   transform: none;
   opacity: 1;
   pointer-events: auto;
