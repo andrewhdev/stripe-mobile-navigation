@@ -86,7 +86,7 @@
   right: 0.5rem; /* position button over underlying menu button */
 }
 
-.popup {
+.popup-container {
   position: absolute;
   left: 0.5rem;
   top: 0.5rem;
@@ -96,7 +96,7 @@
   pointer-events: none;
 }
 
-.popupContainer {
+.popup {
   background: #fff;
   border-radius: 4px;
   box-shadow: 1px 1px 4px #8f8f8f;
