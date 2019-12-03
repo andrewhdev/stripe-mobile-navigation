@@ -1,5 +1,5 @@
 # stripe-mobile-navigation
 
-This is a starter project used to create a stripe-style mobile menu
+This is an example of a stripe-style mobile menu.
 
-Checkout the tutorial at https://imakebuttonswork.com/how-to-create-an-awesome-mobile-navigation-menu
+Checkout the companion tutorial at https://imakebuttonswork.com/how-to-create-an-awesome-mobile-navigation-menu
